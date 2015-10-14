@@ -16,4 +16,4 @@ for i in $locales ; do
 done
 
 # Copy the rootfs additions
-# cp -r $BOARDDIR/rootfs-additions/* $TARGETDIR/
+# cp -r $BOARDDIR/rootfs-additions/* $TARGETDIR.swp
