@@ -10,7 +10,7 @@ ZBAR_INSTALL_TARGET = YES
 ZBAR_INSTALL_STAGING = YES
 ZBAR_AUTORECONF = YES
 ZBAR_DEPENDENCIES = libv4l
-ZBAR_CONF_OPT = --without-imagemagick --without-qt --without-gtk --without-python --without-x --without-jpeg --enable-shared=yes
+ZBAR_CONF_OPTS = --without-imagemagick --without-qt --without-gtk --without-python --without-x --without-jpeg --enable-shared=yes
 #--enable-pthread=no 
 
 ZBAR_POST_BUILD_HOOKS += ZBAR_INSTALL_FIXUP

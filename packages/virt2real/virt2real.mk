@@ -1,1 +1,1 @@
-include package/virt2real/*/*.mk
+include $(BR2_EXTERNAL)/packages/virt2real/*/*.mk

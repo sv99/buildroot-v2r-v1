@@ -4,7 +4,7 @@ source "$BR2_EXTERNAL/packages/virt2real/Config.in"
 source "$BR2_EXTERNAL/packages/babeld/Config.in"
 source "$BR2_EXTERNAL/packages/dejavu-fonts/Config.in"
 source "$BR2_EXTERNAL/packages/gphoto2/Config.in"
-source "$BR2_EXTERNAL/packages/gpotofs/Config.in"
+source "$BR2_EXTERNAL/packages/gphotofs/Config.in"
 source "$BR2_EXTERNAL/packages/libgphoto2/Config.in"
 source "$BR2_EXTERNAL/packages/linuxconsoletools/Config.in"
 source "$BR2_EXTERNAL/packages/ltwheelconf/Config.in"
@@ -18,7 +18,8 @@ source "$BR2_EXTERNAL/packages/rfkill/Config.in"
 source "$BR2_EXTERNAL/packages/zbar/Config.in"
 
 # multimedia
-menu "Audio and video applications"
+
+menu "V2R Audio and video applications"
 	source "$BR2_EXTERNAL/packages/festival/Config.in"
 	source "$BR2_EXTERNAL/packages/gst-rtsp-server/Config.in"
 	source "$BR2_EXTERNAL/packages/gst-ti-dmai/Config.in"

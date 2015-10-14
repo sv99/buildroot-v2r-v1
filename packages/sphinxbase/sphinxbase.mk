@@ -4,6 +4,6 @@ SPHINXBASE_SITE=http://downloads.sourceforge.net/project/cmusphinx/sphinxbase/$(
 SPHINXBASE_AUTORECONF = YES
 SPHINXBASE_INSTALL_STAGING = YES
 SPHINXBASE_INSTALL_TARGET = YES
-SPHINXBASE_CONF_OPT = --without-python
+SPHINXBASE_CONF_OPTS = --without-python
 
 $(eval $(autotools-package))

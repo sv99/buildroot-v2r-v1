@@ -10,7 +10,7 @@ GST_TI_DMAI_INSTALL_STAGING = YES
 GST_TI_DMAI_DEPENDENCIES = gstreamer host-pkgconf
 GST_TI_DMAI_AUTORECONF = YES
 
-GST_TI_DMAI_CONF_OPT = \
+GST_TI_DMAI_CONF_OPTS = \
 	--with-preset=dm365  \
 	--with-platform=dm365 \
 	--target=arm-none-linux-gnueabi \
@@ -39,5 +39,7 @@ GST_TI_DMAI_CONF_ENV = \
 		DMAI_INSTALL_DIR="$(DEVDIR)/dvsdk/dmai_2_20_00_15"
 
 GST_TI_DMAI_MAKE_ENV = $(GST_TI_DMAI_CONF_ENV)
+
+#undef GLIB_2_31_AND_UP
 
 $(eval $(autotools-package))

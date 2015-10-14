@@ -18,7 +18,7 @@ define RCBOARD_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 -D $(@D)/board/rcboard $(TARGET_DIR)/opt/rcboard/
 	$(INSTALL) -m 0755 -D $(@D)/board/scripts/*.sh $(TARGET_DIR)/opt/rcboard/
 	$(INSTALL) -m 0644 -D $(@D)/board/scripts/rcboard.conf $(TARGET_DIR)/opt/rcboard/
-	$(INSTALL) -m 0755 package/virt2real/rcboard/S98rcboard $(TARGET_DIR)/etc/init.d.sample/
+	$(INSTALL) -m 0755 $(BR2_EXTERNAL)/packages/virt2real/rcboard/S98rcboard $(TARGET_DIR)/etc/init.d.sample/
 endef
 
 define RCBOARD_CLEAN_CMDS
