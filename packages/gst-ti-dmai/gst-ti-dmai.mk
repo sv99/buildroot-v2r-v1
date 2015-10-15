@@ -40,6 +40,4 @@ GST_TI_DMAI_CONF_ENV = \
 
 GST_TI_DMAI_MAKE_ENV = $(GST_TI_DMAI_CONF_ENV)
 
-#undef GLIB_2_31_AND_UP
-
 $(eval $(autotools-package))

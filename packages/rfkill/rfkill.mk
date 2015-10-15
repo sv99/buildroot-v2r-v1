@@ -9,7 +9,7 @@ RFKILL_SOURCE = rfkill-$(RFKILL_VERSION).tar.gz
 RFKILL_SITE = https://www.kernel.org/pub/software/network/rfkill
 
 define RFKILL_BUILD_CMDS
-        $(MAKE) -C $(@D) CC="$(TARGET_CC) $(TARGET_CFLAGS)" \
+	$(MAKE) -C $(@D) CC="$(TARGET_CC) $(TARGET_CFLAGS)" \
 		V=1 VERSION_SUFFIX="-br"
 endef
 

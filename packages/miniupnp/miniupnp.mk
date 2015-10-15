@@ -22,13 +22,13 @@ define MINIUPNP_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 -D $(@D)/miniupnpc/upnpc-static $(TARGET_DIR)/usr/bin/upnpc
 
 	$(INSTALL) -D -m 0755 $(@D)/minissdpd/minissdpd $(TARGET_DIR)/usr/bin/minissdpd
-	$(INSTALL) -m 755 -D package/miniupnp/S55ssdpd $(TARGET_DIR)/etc/init.d.sample/S55ssdpd
-	$(INSTALL) -m 755 -D package/miniupnp/S80upnpd $(TARGET_DIR)/etc/init.d.sample/S80upnpd
+	$(INSTALL) -m 755 -D $(BR2_EXTERNAL)/packages/miniupnp/S55ssdpd $(TARGET_DIR)/etc/init.d.sample/S55ssdpd
+	$(INSTALL) -m 755 -D packages/miniupnp/S80upnpd $(TARGET_DIR)/etc/init.d.sample/S80upnpd
 
 	$(INSTALL) -m 0755 -D $(@D)/miniupnpd/miniupnpd $(TARGET_DIR)/usr/bin/miniupnpd
-	$(INSTALL) -m 0644 -D package/miniupnp/miniupnpd.conf $(TARGET_DIR)/etc/miniupnpd.conf
-	$(INSTALL) -m 0755 -D package/miniupnp/upnpd_prepare.sh $(TARGET_DIR)/etc/virt2real/upnpd_prepare.sh
-	$(INSTALL) -m 0755 -D package/busybox/udhcpc.script $(TARGET_DIR)/usr/share/udhcpc/default.script
+	$(INSTALL) -m 0644 -D $(BR2_EXTERNAL)/packages/miniupnp/miniupnpd.conf $(TARGET_DIR)/etc/miniupnpd.conf
+	$(INSTALL) -m 0755 -D $(BR2_EXTERNAL)/packages/miniupnp/upnpd_prepare.sh $(TARGET_DIR)/etc/virt2real/upnpd_prepare.sh
+	$(INSTALL) -m 0755 -D $(BR2_EXTERNAL)/packages/busybox/udhcpc.script $(TARGET_DIR)/usr/share/udhcpc/default.script
 
 endef
 
