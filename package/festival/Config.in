@@ -9,15 +9,15 @@ menuconfig BR2_PACKAGE_FESTIVAL
 if BR2_PACKAGE_FESTIVAL
 
 	menu "speech tools"
-		source "$BR2_EXTERNAL/packages/festival/speech-tools/Config.in"
+		source "$BR2_EXTERNAL/package/festival/speech-tools/Config.in"
 	endmenu
 
 	menu "festival lexicons"
-		source "$BR2_EXTERNAL/packages/festival/lexicons/Config.in"
+		source "$BR2_EXTERNAL/package/festival/lexicons/Config.in"
 	endmenu
 
 	menu "festival voices"
-		source "$BR2_EXTERNAL/packages/festival/voices/Config.in"
+		source "$BR2_EXTERNAL/package/festival/voices/Config.in"
 	endmenu
 
 endif

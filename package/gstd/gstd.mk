@@ -14,8 +14,8 @@ GSTD_CONF_OPTS = --with-vapidir=$(TARGET_DIR)/usr/share/vala-0.26/vapi/
 define GSTD_INSTALL_TARGET_CMDS
 	mkdir -p $(TARGET_DIR)/etc/dbus-1/system.d
 	mkdir -p $(TARGET_DIR)/etc/init.d
-	$(INSTALL) -m 0666 $(BR2_EXTERNAL)/packages/gstd/gstd.conf $(TARGET_DIR)/etc/dbus-1/system.d
-	$(INSTALL) -m 0755 $(BR2_EXTERNAL)/packages/gstd/S31gstd $(TARGET_DIR)/etc/init.d
+	$(INSTALL) -m 0666 $(BR2_EXTERNAL)/package/gstd/gstd.conf $(TARGET_DIR)/etc/dbus-1/system.d
+	$(INSTALL) -m 0755 $(BR2_EXTERNAL)/package/gstd/S31gstd $(TARGET_DIR)/etc/init.d
 
 	mkdir -p $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/src/gstd $(TARGET_DIR)/usr/bin
