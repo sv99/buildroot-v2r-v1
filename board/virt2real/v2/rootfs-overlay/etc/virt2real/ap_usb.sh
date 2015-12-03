@@ -1,6 +1,6 @@
 #!/bin/sh
 
-modprobe lib80211.ko
+modprobe lib80211
 
 # start drivers initialization
 /etc/virt2real/wlan.sh
