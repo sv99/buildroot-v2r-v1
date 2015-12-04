@@ -24,9 +24,15 @@ add_br2_package_overlay_dir.patch
 cd fs/
 git patch ../buildroot-v2r-v1/add_br2_package_overlay_dir.patch
 ...
-git stash .
+git checkout .
 git pull upstream master
 git patch  ../buildroot-v2r-v1/add_br2_package_overlay_dir.patch
 ```
+## make image
 
+```
+time make build
+make img_install
+make img_umount
+```
 
